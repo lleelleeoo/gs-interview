@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "plugins": ["simple-import-sort", "@stylistic/js"],
+  "rules": {
+    "no-restricted-imports": ["error", {
+      "name": "@mui/material/Box",
+      "message": "Please use a simple `<div />` instead."
+    }, {
+        "name": "@mui/material/Grid",
+        "message": "Please use a simple `<div />` instead."
+    }],
+
+    "no-restricted-exports": ["error", { "restrictDefaultExports": { "direct": true } }],
+    "func-style": ["error", "declaration"],
+    "no-var": ["error"],
+    "prefer-const": ["error"],
+    "no-return-await": ["error"],
+
+    "react/jsx-no-useless-fragment": ["error"],
+
+    "simple-import-sort/imports": ["error"],
+    "import/first": ["error"],
+    "import/newline-after-import": ["error"],
+    "import/no-duplicates": ["error"],
+
+    "eol-last": ["error", "always"],
+    "@stylistic/js/indent": ["error", 4],
+    "@stylistic/js/semi": ["error", "always"],
+    "@stylistic/js/quotes": ["error", "double"]
+  }
 }
