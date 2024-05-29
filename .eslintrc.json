@@ -1,6 +1,6 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["simple-import-sort", "@stylistic/js"],
+  "plugins": ["simple-import-sort", "@stylistic/eslint-plugin"],
   "rules": {
     "no-restricted-imports": ["error", {
       "name": "@mui/material/Box",
@@ -24,8 +24,12 @@
     "import/no-duplicates": ["error"],
 
     "eol-last": ["error", "always"],
-    "@stylistic/js/indent": ["error", 4],
-    "@stylistic/js/semi": ["error", "always"],
-    "@stylistic/js/quotes": ["error", "double"]
+    "@stylistic/max-len": ["error", { "code": 120 }],
+    "@stylistic/indent": ["error", 4],
+    "@stylistic/semi": ["error", "always"],
+    "@stylistic/quotes": ["error", "double"],
+    "@stylistic/no-trailing-spaces": "error",
+    "@stylistic/key-spacing": ["error"],
+    "@stylistic/object-curly-spacing": ["error", "always"]
   }
 }

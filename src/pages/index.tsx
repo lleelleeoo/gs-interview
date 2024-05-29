@@ -6,6 +6,16 @@ import styles from "@/styles/Home.module.css";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
+/* eslint-disable @stylistic/max-len */
+const links = {
+    main: "https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    docs: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    learn: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    templates: "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+    new: "https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
+} as const;
+/* eslint-enable @stylistic/max-len */
+
 function Home() {
     return (
         <>
@@ -23,8 +33,7 @@ function Home() {
                     </p>
                     <div>
                         <a
-                            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                            target="_blank"
+                            href={ links.main }
                             rel="noopener noreferrer"
                         >
               By{" "}
@@ -53,7 +62,7 @@ function Home() {
 
                 <div className={styles.grid}>
                     <a
-                        href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href={ links.docs }
                         className={styles.card}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -67,7 +76,7 @@ function Home() {
                     </a>
 
                     <a
-                        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href={ links.learn }
                         className={styles.card}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -81,7 +90,7 @@ function Home() {
                     </a>
 
                     <a
-                        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href={ links.templates }
                         className={styles.card}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -95,7 +104,7 @@ function Home() {
                     </a>
 
                     <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href={ links.new }
                         className={styles.card}
                         target="_blank"
                         rel="noopener noreferrer"
