@@ -1,0 +1,5 @@
+
+.main {
+    min-block-size: 100vh;
+    background-color: var(--surface-back-color);
+}

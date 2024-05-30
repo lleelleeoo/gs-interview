@@ -1,0 +1,10 @@
+:root {
+    /* Surfaces color set */
+    --surface-back-color: #F5F6F7;
+    --surface-lv1-color: #FFF;
+
+    /* Text color set */
+    --text-primary-color: #1A1A1A;
+    --text-secondary-color: #656565;
+    --text-active-color: #00A757;
+}
