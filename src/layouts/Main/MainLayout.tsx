@@ -1,13 +1,9 @@
-import { clsx } from "clsx";
-import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { PropsWithChildren } from "react";
 
-import styles from "./MainLayout.module.css";
+import { Header } from "@/components/Header/Header";
 
-// Maybe I should decouple font from layout on body,
-// but there is only one layout, so it's good enough for me
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+import styles from "./MainLayout.module.css";
 
 const globalTitle = "greenscrens.ai";
 
@@ -24,7 +20,8 @@ export function MainLayout({ children, title }: MainLayoutProps) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={clsx(poppins.className, styles.main)}>{children}</main>
+            <Header />
+            {children}
         </>
     );
 };
