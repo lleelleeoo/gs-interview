@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint:code": "next lint",
+    "lint:styles": "stylelint **/*.css",
+    "lint:code:fix": "next lint --fix",
+    "lint:fix": "npm run lint:code:fix",
+    "lint": "npm run lint:code && npm run lint:styles",
     "prepare": "husky"
   },
   "dependencies": {
@@ -27,6 +30,8 @@
     "eslint-config-next": "14.2.3",
     "eslint-plugin-simple-import-sort": "12.1.0",
     "husky": "9.0.11",
+    "stylelint": "16.6.1",
+    "stylelint-config-standard": "36.0.0",
     "typescript": "5"
   }
 }
