@@ -3,10 +3,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { PopulationPayload, populationPerState } from "./mockData";
 
-type Data = {
-    name: string;
-};
-
 function populationRequestHandler(
     req: NextApiRequest,
     res: NextApiResponse<PopulationPayload>,
