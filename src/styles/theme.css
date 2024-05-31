@@ -10,6 +10,9 @@
     --surface-back-color: #F5F6F7;
     --surface-lv1-color: #FFF;
 
+    /* Borders color set */
+    --border-lv1-color: #E4E4E4;
+
     /* Text color set */
     --text-primary-color: #1A1A1A;
     --text-secondary-color: #656565;
