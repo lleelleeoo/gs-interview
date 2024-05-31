@@ -2,10 +2,10 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    min-block-size: 64px;
-    gap: 16px;
-    padding-inline: 64px;
     background-color: var(--surface-lv1-color);
+    gap: 16px;
+    min-block-size: 64px;
+    padding-inline: 64px;
 }
 
 .avatar {

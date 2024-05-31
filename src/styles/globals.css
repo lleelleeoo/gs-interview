@@ -3,12 +3,13 @@ html {
 }
 
 body {
+    background-color: var(--surface-back-color);
+    color: var(--text-primary-color);
+
     /* Not good for mobile layouts
     Issue desctiption and best practise on the link below
     https://www.npmjs.com/package/react-div-100vh */
     min-block-size: 100vh;
-    background-color: var(--surface-back-color);
-    color: var(--text-primary-color);
 }
 
 * {

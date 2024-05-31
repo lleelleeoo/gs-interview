@@ -1,6 +1,10 @@
 
 .main {
-    max-inline-size: 1208px;
-    margin-inline: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap :24px;
     margin-block: 32px;
+    margin-inline: auto;
+    max-inline-size: 1208px;
 }
