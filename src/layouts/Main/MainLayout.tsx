@@ -21,7 +21,7 @@ export function MainLayout({ children, title }: MainLayoutProps) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            {children}
+            <main className={styles.main}>{children}</main>
         </>
     );
 };

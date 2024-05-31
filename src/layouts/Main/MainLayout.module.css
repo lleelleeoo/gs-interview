@@ -1,5 +1,6 @@
 
 .main {
-    min-block-size: 100vh;
-    background-color: var(--surface-back-color);
+    max-inline-size: 1208px;
+    margin-inline: auto;
+    margin-block: 32px;
 }
