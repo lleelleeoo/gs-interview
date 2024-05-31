@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    min-block-size: 64px;
+    gap: 16px;
+    padding-inline: 64px;
+    background-color: var(--surface-lv1-color);
+}
+
+.avatar {
+    margin-inline-start: auto;
+}

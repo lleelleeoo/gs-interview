@@ -6,13 +6,18 @@ import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
-const fontFamily = [
+const typography = { fontFamily: [
     poppins.style.fontFamily,
     "Arial",
     "sans-serif",
-].join(",");
+].join(",") };
 
-const theme = createTheme({ typography: { fontFamily } });
+// Does it supprt css variables?
+// Will be good to setup Material palette and global palette in one place
+// Or use only Material one
+const palette = { primary: { main: "#00A757" } };
+
+const theme = createTheme({ typography, palette });
 
 // Need to share layout between pages and add some global styles
 // https://nextjs.org/docs/pages/building-your-application/routing/custom-app

@@ -1,11 +1,14 @@
+import NextLink from "next/link";
+
 import styles from "./Logo.module.css";
 
 export function Logo () {
     return (
-        <span
+        <NextLink
+            href="/"
             className={styles.logo}
-            data-testId="LogoComponent">
+            data-testid="logo">
                 greenscreens.ai
-        </span>
+        </NextLink>
     );
 }
