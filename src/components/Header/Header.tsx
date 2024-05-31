@@ -9,12 +9,12 @@ import styles from "./Header.module.css";
 const routes: { label: string; slug: string }[] = [
     {
         label: "Rates",
-        slug: "/",
+        slug: "rates",
 
     },
     {
         label: "Pricing",
-        slug: "/",
+        slug: "pricing",
     }
 ];
 
@@ -34,6 +34,6 @@ export function Header() {
                 <Tab key={label} label={label} component={NextLink} href={slug} />
             ))}
         </Tabs>
-        <Avatar className={styles.avatar} data-testid="header-avatar">db</Avatar>
+        <Avatar className={styles.avatar} data-testid="header-avatar" sx={{ width: "24px", height: "24px" }}>db</Avatar>
     </header>;
 }

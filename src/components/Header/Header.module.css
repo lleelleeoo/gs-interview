@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    border-bottom: 1px solid var(--border-lv1-color);
     background-color: var(--surface-lv1-color);
     gap: 16px;
     min-block-size: 64px;
@@ -9,5 +10,6 @@
 }
 
 .avatar {
+    font-size: 12px;
     margin-inline-start: auto;
 }
