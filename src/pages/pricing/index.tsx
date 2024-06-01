@@ -8,7 +8,7 @@ function Home({ ...pageProps }: PropsWithChildren) {
     return (
         <MainLayout {...pageProps}>
             <Card>
-                <Typography variant="h5">Interview sample for greenscreens.ai</Typography>
+                <Typography variant="h5">pricing</Typography>
             </Card>
         </MainLayout>
     );

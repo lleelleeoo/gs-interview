@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid var(--border-lv1-color);
+    background-color: var(--surface-lv1-color);
+    min-block-size: 64px;
+    padding-block-end: 4px;
+    padding-inline: 66px;
+}
+
+.logo {
+    margin-inline-end: 28px;
+}
+
+.avatar {
+    font-size: 12px;
+    margin-inline-start: auto;
+}
+
+.divider {
+    block-size: 24px;
+    margin-block-start: 20px;
+}
+
+.tab {
+    text-transform: none;
+}

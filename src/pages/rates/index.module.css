@@ -1,0 +1,17 @@
+.card-block {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.card-item {
+    flex-grow: 1;
+}
+
+.map-skeleton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 260px;
+}

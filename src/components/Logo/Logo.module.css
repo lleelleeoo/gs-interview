@@ -1,0 +1,19 @@
+.logo {
+    position: relative;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    text-align: left;
+}
+
+.logo::before {
+    position: absolute;
+    display: block;
+    background-color: var(--brand-color);
+    block-size: 3px;
+    content: "";
+    inline-size: 200px;
+    inset-block-end: 1px;
+    inset-inline-end: 2px;
+}
