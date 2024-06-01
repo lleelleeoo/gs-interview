@@ -1,25 +1,35 @@
-import { Typography } from "@mui/material";
-import { PropsWithChildren } from "react";
+import { CircularProgress,Typography } from "@mui/material";
+import dynamic from "next/dynamic";
+import { PropsWithChildren, useMemo } from "react";
 
 import { Card } from "@/components/Card/Card";
 import { MainLayout } from "@/layouts/Main/MainLayout";
 
 import styles from "./index.module.css";
 
-function Home({ ...pageProps }: PropsWithChildren) {
+function Rates({ ...pageProps }: PropsWithChildren) {
+    const PopulationMap = useMemo(() => dynamic(
+        () => import("@/components/PopulationMap/PopulationMap").then(({ PopulationMap }) => PopulationMap),
+        {
+            loading: () => <div className={styles["map-skeleton"]}><CircularProgress /></div>,
+            ssr: false
+        }
+    ), []);
+
     return (
         <MainLayout {...pageProps}>
-            <Card>filters be there</Card>
             <div className={styles["card-block"]}>
                 <Card className={styles["card-item"]}>
-                    <Typography variant="h5">Win Rate %</Typography>
+                    <Typography variant="h5">Only tiles</Typography>
+                    <PopulationMap showMapLayer={false} />
                 </Card>
                 <Card className={styles["card-item"]}>
-                    <Typography variant="h5">Est. Margin %</Typography>
+                    <Typography variant="h5">Or with map</Typography>
+                    <PopulationMap position={[63, -158]} />
                 </Card>
             </div>
         </MainLayout>
     );
 }
 
-export { Home as default };
+export { Rates as default };

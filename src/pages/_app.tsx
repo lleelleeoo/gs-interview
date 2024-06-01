@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider  } from "@mui/material";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 const typography = { fontFamily: [
     poppins.style.fontFamily,
     "Arial",

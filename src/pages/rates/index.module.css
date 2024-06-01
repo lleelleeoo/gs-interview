@@ -8,3 +8,10 @@
 .card-item {
     flex-grow: 1;
 }
+
+.map-skeleton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 260px;
+}

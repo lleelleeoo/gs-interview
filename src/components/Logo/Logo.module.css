@@ -13,7 +13,7 @@
     background-color: var(--brand-color);
     block-size: 3px;
     content: "";
-    inline-size: 192px;
+    inline-size: 200px;
     inset-block-end: 1px;
-    inset-inline-end: 0;
+    inset-inline-end: 2px;
 }
